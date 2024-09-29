@@ -1,0 +1,111 @@
+/*
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #343a40;
+  min-width: 100px;
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #495057;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+
+*/
+.barra {
+  background: linear-gradient(to bottom, #000000, #1e3738);
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/mrpback.png");
+  background-size: cover;
+  z-index: -1; 
+
+}
+
+.white-div {
+  width: 80%; 
+  height: 75%; 
+  background-color: rgba(255, 251, 251,0.9); 
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.form-group {
+  margin-bottom: 20px; 
+}
+
+.inline-input {
+  width: 45%; 
+  display: inline-block;
+  vertical-align: top;
+}
+
+a:hover h3 {
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
+}
+
+h3 {
+  transition: transform 0.3s ease;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.loading .header, .loading .container.white-div {
+  pointer-events: none;
+}
